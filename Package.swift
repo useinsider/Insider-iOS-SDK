@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "InsiderMobile",
-            url: "https://mobilesdk.useinsider.com/iOS/13.6.3/InsiderMobileIOSFramework.zip",
-            checksum: "91c99fffa5dd553802d75fd356e1845c502f85f12e6015b66ebb0bc3d021ebbf"
+            url: "https://mobilesdk.useinsider.com/iOS/13.6.4/InsiderMobileIOSFramework.zip",
+            checksum: "1eaa9f889cc0da8ef367f1dada7c5bf0dfcac594fd5e817b8bf809fd64aeb895"
         ),
         .binaryTarget(
             name: "InsiderGeofence",
