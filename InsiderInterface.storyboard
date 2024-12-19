@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SiM-Vc-8wp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="TW4-3L-2Yf">
+            <objects>
+                <viewController id="SiM-Vc-8wp" userLabel="Notification View Controller" customClass="NotificationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zSd-Z8-3He"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pbd-nE-q3v"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="7Wq-Ra-iN0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="345"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3w-DD-oDv" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="5" width="320" height="335"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SiM-Vc-8wp" id="jvT-Dd-tmG"/>
+                                    <outlet property="delegate" destination="SiM-Vc-8wp" id="NDc-xs-a9t"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J3w-DD-oDv" firstAttribute="leading" secondItem="7Wq-Ra-iN0" secondAttribute="leading" id="5r8-mv-c7f"/>
+                            <constraint firstItem="J3w-DD-oDv" firstAttribute="bottom" secondItem="Pbd-nE-q3v" secondAttribute="top" constant="-5" id="8w0-Os-9ME"/>
+                            <constraint firstAttribute="trailing" secondItem="J3w-DD-oDv" secondAttribute="trailing" id="eLx-hc-ekt"/>
+                            <constraint firstItem="J3w-DD-oDv" firstAttribute="top" secondItem="zSd-Z8-3He" secondAttribute="bottom" constant="5" id="gra-i9-vEd"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="345"/>
+                    <connections>
+                        <outlet property="carousel" destination="J3w-DD-oDv" id="Twk-No-11f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fjb-6O-M3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="102"/>
+        </scene>
+    </scenes>
+</document>
