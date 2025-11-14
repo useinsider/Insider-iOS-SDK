@@ -19,13 +19,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "InsiderMobile",
-            url: "https://mobilesdk.useinsider.com/iOS/14.0.5/InsiderMobileIOSFramework.zip",
-            checksum: "31f51ecabd851e8ba2ed13c50ba1e49aa9c4a5431d72946c0556245e0f32a8bb"
+            url: "https://mobilesdk.useinsider.com/iOS/14.2.0/InsiderMobileIOSFramework.zip",
+            checksum: "a842115bbb85e8bb593405a4b11824436672dc11d29067cbf186b54021046c7d"
         ),
-        .binaryTarget(
+        .binaryTarget(  
             name: "InsiderGeofence",
-            url: "https://mobilesdk.useinsider.com/iOS/InsiderGeofence/1.2.3/InsiderGeofenceIOSFramework.zip",
-            checksum: "75169e0d7623bad9255142c6527795cfd049d72eb0ace42286c8e0f6be3ea56a"
+            url: "https://mobilesdk.useinsider.com/iOS/InsiderGeofence/1.2.4/InsiderGeofenceIOSFramework.zip",
+            checksum: "a18057c7b31d3da0280d944618be9971ce991eb33a4ee383dadaa30a36785614"
         ),
         .binaryTarget(
             name: "InsiderMobileAdvancedNotification",
