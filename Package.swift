@@ -49,7 +49,7 @@ let package = Package(
         .binaryTarget(
             name: "InsiderWebView",
             url: "https://mobilesdk.useinsider.com/iOSWebView/1.0.0/InsiderWebViewIOSFramework.zip",
-            checksum: "2289efbd905b80a7a1a9528f4144543ef3b10ed8eeeaa4cd3d7db75816fdbf31"
+            checksum: "217f67bdef288f7b26e2a22c8ba34f33feb36062065186c0bd707a6f1f7bcfc2"
         ),
     ]
 )
