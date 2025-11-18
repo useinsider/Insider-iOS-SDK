@@ -12,6 +12,7 @@ Insider iOS SDK provides a set of frameworks for integrating Insider services in
 | InsiderMobile                     | ✅   | 14.2.0 |
 | InsiderGeofence                   | ✅   | 1.2.4  |
 | InsiderMobileAdvancedNotification | ✅   | 2.3.1  |
+| InsiderWebView                    | ✅   | 1.0.0  |
 
 ## Installation
 
