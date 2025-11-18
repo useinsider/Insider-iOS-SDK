@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Insider",
+    platforms: [
+        .iOS(.v12)
+    ],
     products: [
         .library(
             name: "InsiderMobile",
@@ -14,7 +17,10 @@ let package = Package(
             targets: ["InsiderGeofence"]),
         .library(
             name: "InsiderMobileAdvancedNotification",
-            targets: ["InsiderMobileAdvancedNotification"])
+            targets: ["InsiderMobileAdvancedNotification"]),
+        .library(
+            name: "InsiderWebView",
+            targets: ["InsiderWebView", "InsiderMobile"]),
     ],
     targets: [
         .binaryTarget(
@@ -40,6 +46,10 @@ let package = Package(
                 .process("InsiderInterface.storyboard")
             ]
         ),
-
+        .binaryTarget(
+            name: "InsiderWebView",
+            url: "https://mobilesdk.useinsider.com/iOSWebView/1.0.0/InsiderWebViewIOSFramework.zip",
+            checksum: "2289efbd905b80a7a1a9528f4144543ef3b10ed8eeeaa4cd3d7db75816fdbf31"
+        ),
     ]
 )
