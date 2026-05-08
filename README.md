@@ -1,6 +1,6 @@
 # Insider SDK
 
-[![Version v1.8.2](https://img.shields.io/badge/Version-v1.8.2-blue.svg)]() [![CocoaPods Compatible](https://img.shields.io/badge/Cocoapods-Compatible-brightgreen.svg)]() [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg)]() [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)]()
+[![Version v1.8.3](https://img.shields.io/badge/Version-v1.8.3-blue.svg)]() [![CocoaPods Compatible](https://img.shields.io/badge/Cocoapods-Compatible-brightgreen.svg)]() [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg)]() [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)]()
 
 
 Insider iOS SDK provides a set of frameworks for integrating Insider services into your iOS application. The SDK includes modules for mobile interaction, geofencing, and advanced notifications.
@@ -9,11 +9,11 @@ Insider iOS SDK provides a set of frameworks for integrating Insider services in
 
 | SDK                               | SPM | Version |
 |-----------------------------------|-----|---------|
-| InsiderMobile                     | ✅   | 15.0.2 |
+| InsiderMobile                     | ✅   | 15.0.3 |
 | InsiderGeofence                   | ✅   | 1.2.4  |
 | InsiderMobileAdvancedNotification | ✅   | 2.3.2  |
 | InsiderWebView                    | ✅   | 1.0.0  |
 
 ## Installation
 
-See Insider's [iOS SDK Setup](https://academy.useinsider.com/docs/ios-basic-sdk-setup) for documentation.
+See Insider's [iOS SDK Setup](https://academy.insiderone.com/docs/ios-basic-sdk-setup) for documentation.
