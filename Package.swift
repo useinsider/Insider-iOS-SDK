@@ -21,12 +21,15 @@ let package = Package(
         .library(
             name: "InsiderWebView",
             targets: ["InsiderWebView", "InsiderMobile"]),
+        .library(
+            name: "InsiderLiveActivities",
+            targets: ["InsiderLiveActivities", "InsiderMobile"]),
     ],
     targets: [
         .binaryTarget(
             name: "InsiderMobile",
-            url: "https://mobilesdk.useinsider.com/iOS/15.0.6/InsiderMobileIOSFramework.zip",
-            checksum: "5bbdc25d72780d571d5965a2f1b5e1ad6fbe70b8b2a888e0c2667b4863d6fdac"
+            url: "https://mobilesdk.useinsider.com/iOS/15.1.0/InsiderMobileIOSFramework.zip",
+            checksum: "1b8f606edae256d90a30999a548e5f5f04e9c187dffe03cb88404c68137e2f74"
         ),
         .binaryTarget(  
             name: "InsiderGeofence",
@@ -50,6 +53,11 @@ let package = Package(
             name: "InsiderWebView",
             url: "https://mobilesdk.useinsider.com/iOSWebView/1.0.0/InsiderWebViewIOSFramework.zip",
             checksum: "217f67bdef288f7b26e2a22c8ba34f33feb36062065186c0bd707a6f1f7bcfc2"
+        ),
+        .binaryTarget(
+            name: "InsiderLiveActivities",
+            url: "https://mobilesdk.useinsider.com/iOS/InsiderLiveActivities/1.0.0/InsiderLiveActivitiesIOSFramework.zip",
+            checksum: "adc242cfac21badf849455d785ee96699ec38e5f8fe8b631bdd05514b3153255"
         ),
     ]
 )
