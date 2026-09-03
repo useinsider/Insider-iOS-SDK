@@ -14,7 +14,7 @@ let package = Package(
             targets: ["InsiderMobile"]),
         .library(
             name: "InsiderGeofence",
-            targets: ["InsiderGeofence"]),
+            targets: ["InsiderGeofence", "InsiderMobile"]),
         .library(
             name: "InsiderMobileAdvancedNotification",
             targets: ["InsiderMobileAdvancedNotification"]),
