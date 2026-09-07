@@ -24,6 +24,9 @@ let package = Package(
         .library(
             name: "InsiderLiveActivities",
             targets: ["InsiderLiveActivities", "InsiderMobile"]),
+        .library(
+            name: "InsiderHybrid",
+            targets: ["InsiderHybrid", "InsiderMobile"]),
     ],
     targets: [
         .binaryTarget(
@@ -53,6 +56,11 @@ let package = Package(
             name: "InsiderWebView",
             url: "https://mobilesdk.useinsider.com/iOSWebView/1.0.0/InsiderWebViewIOSFramework.zip",
             checksum: "217f67bdef288f7b26e2a22c8ba34f33feb36062065186c0bd707a6f1f7bcfc2"
+        ),
+        .binaryTarget(
+            name: "InsiderHybrid",
+            url: "https://mobilesdk.useinsider.com/iOSHybrid/1.7.6/InsiderHybridFramework.zip",
+            checksum: "5c1ec5ec301d3804e15c54a461e193efaf6e92001ad9a57be0464aa146a4ab24"
         ),
         .binaryTarget(
             name: "InsiderLiveActivities",
