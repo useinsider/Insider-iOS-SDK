@@ -1,0 +1,77 @@
+name: Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - ready_for_review
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ios-sdk-run-tests-${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    name: Unit Tests
+    runs-on: macos-26
+    timeout-minutes: 30
+    env:
+      DESTINATION: platform=iOS Simulator,name=iPhone 17
+      PRODUCTS: |
+        InsiderMobile
+        InsiderGeofence
+        InsiderMobileAdvancedNotification
+        InsiderWebView
+        InsiderLiveActivities
+        InsiderHybrid
+    defaults:
+      run:
+        working-directory: .github/tests
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Unit Tests
+        run: |
+          set -euo pipefail
+          IFS=$'\n'
+          for product in $PRODUCTS; do
+            echo "::group::$product"
+            (cd "$product" && xcodebuild test \
+              -scheme SmokeTests-Package \
+              -destination "$DESTINATION" \
+              -derivedDataPath "$RUNNER_TEMP/smoke/$product" \
+              -clonedSourcePackagesDirPath "$RUNNER_TEMP/spm")
+            echo "::endgroup::"
+          done
+
+  integration-tests:
+    name: Integration Tests
+    runs-on: macos-26
+    timeout-minutes: 30
+    env:
+      DESTINATIONS: |
+        generic/platform=iOS Simulator
+        generic/platform=iOS
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Integration Tests
+        run: |
+          set -euo pipefail
+          IFS=$'\n'
+          for destination in $DESTINATIONS; do
+            xcodebuild build \
+              -scheme Insider-Package \
+              -destination "$destination" \
+              -derivedDataPath "$RUNNER_TEMP/build" \
+              CODE_SIGNING_ALLOWED=NO
+          done
