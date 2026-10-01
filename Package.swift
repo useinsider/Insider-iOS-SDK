@@ -31,8 +31,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "InsiderMobile",
-            url: "https://mobilesdk.useinsider.com/iOS/16.1.1/InsiderMobileIOSFramework.zip",
-            checksum: "d1888662d6260234d136e4861bdf8a5e073e35beb29c013ac0ede7f6e0f38e31"
+            url: "https://mobilesdk.useinsider.com/iOS/16.2.0/InsiderMobileIOSFramework.zip",
+            checksum: "cc26c348061cef26433ecd2f71603cea43d7069be54c3bbea28aa741b0315aef"
         ),
         .binaryTarget(  
             name: "InsiderGeofence",
@@ -59,8 +59,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "InsiderHybrid",
-            url: "https://mobilesdk.useinsider.com/iOSHybrid/1.7.6/InsiderHybridFramework.zip",
-            checksum: "5c1ec5ec301d3804e15c54a461e193efaf6e92001ad9a57be0464aa146a4ab24"
+            url: "https://mobilesdk.useinsider.com/iOSHybrid/1.8.0/InsiderHybridFramework.zip",
+            checksum: "0b881e64313a3b7160c6b036dba73d690477b848d5222e9cb333300af0c589db"
         ),
         .binaryTarget(
             name: "InsiderLiveActivities",
