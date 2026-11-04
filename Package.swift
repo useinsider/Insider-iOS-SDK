@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Insider",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -31,8 +31,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "InsiderMobile",
-            url: "https://mobilesdk.useinsider.com/iOS/16.4.0/InsiderMobileIOSFramework.zip",
-            checksum: "20bab4f85fa39d8d7bb362fee60fdf92442340c6c4554971ca290f4a293162fe"
+            url: "https://mobilesdk.useinsider.com/iOS/16.5.0/InsiderMobileIOSFramework.zip",
+            checksum: "6922f98b5fd608769f1a19efbe84497cacb7ca643557dabb63c86a2fee48b685"
         ),
         .binaryTarget(  
             name: "InsiderGeofence",
