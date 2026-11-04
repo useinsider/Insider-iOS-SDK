@@ -32,7 +32,6 @@ jobs:
         InsiderMobileAdvancedNotification
         InsiderWebView
         InsiderLiveActivities
-        InsiderHybrid
     defaults:
       run:
         working-directory: .github/tests
